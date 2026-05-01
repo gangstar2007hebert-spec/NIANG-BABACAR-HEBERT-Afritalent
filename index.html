@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AfriTalent</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+
+    <main>
+       <!-- HERO -->
+<section>
+  <h1>Trouvez les meilleurs freelances en Afrique</h1>
+  <p>Une plateforme pour connecter talents et entreprises</p>
+  <button>Je suis Freelance</button>
+  <button>Je cherche un Freelance</button>
+</section>
+
+<!-- COMMENT CA MARCHE -->
+<section>
+  <h2>Comment ça marche</h2>
+  <div class="bento">
+    <div>
+      <h3>1. Créez un compte</h3>
+      <p>Inscription rapide</p>
+    </div>
+    <div>
+      <h3>2. Trouvez une mission</h3>
+      <p>Parcourez les offres</p>
+    </div>
+    <div>
+      <h3>3. Travaillez</h3>
+      <p>Collaborez</p>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section>
+  <h2>Catégories</h2>
+  <div class="categories">
+    <div>Développement Web</div>
+    <div>Design UI/UX</div>
+    <div>Marketing Digital</div>
+    <div>Data & IA</div>
+    <div>Rédaction Tech</div>
+    <div>DevOps & Cloud</div>
+  </div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section>
+  <h2>Témoignages</h2>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <p>"Très bonne plateforme" - Ali</p>
+      </div>
+
+      <div class="carousel-item">
+        <p>"J'ai trouvé un job rapidement" - Fatou</p>
+      </div>
+
+      <div class="carousel-item">
+        <p>"Service incroyable" - Jean</p>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <h2>Rejoignez AfriTalent dès aujourd'hui</h2>
+  <button>S'inscrire</button>
+</section>
+<section class="container my-5 fade"></section>
+<div class="row text-center my-5">
+  <div class="col">
+    <h2 class="counter" data-target="2500">0</h2>
+    <p>Freelances</p>
+  </div>
+  <div class="col">
+    <h2 class="counter" data-target="800">0</h2>
+    <p>Entreprises</p>
+  </div>
+</div>
+<div class="text-center mb-4">
+  <button onclick="filter('all')" class="btn btn-dark">Tous</button>
+  <button onclick="filter('web')" class="btn btn-primary">Web</button>
+  <button onclick="filter('design')" class="btn btn-success">Design</button>
+</div>
+<div class="col-md-4" data-cat="web"></div>
+    </main>
+
+    <footer>
+        <p>© 2026 AfriTalent</p>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
