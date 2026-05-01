@@ -1,3 +1,58 @@
 body {
   padding-top: 70px;
 }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* TITRES */
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* SECTIONS */
+section {
+  margin-top: 50px;
+}
+
+/* LIENS */
+a {
+  text-decoration: none;
+}
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../images/bg.jpg') center/cover;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.navbar {
+  transition: 0.3s;
+}
+footer {
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
