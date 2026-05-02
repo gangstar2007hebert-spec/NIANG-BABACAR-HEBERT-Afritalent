@@ -23,3 +23,45 @@ window.addEventListener("scroll", () => {
     nav.style.background = "";
   }
 });
+// Observer pour animations fade-in
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".fade").forEach(el => {
+  observer.observe(el);
+});
+// Compteurs animés
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      let counter = entry.target;
+      let target = +counter.dataset.target;
+      let count = 0;
+
+      let update = () => {
+        count += target / 100;
+
+        if (count < target) {
+          counter.innerText = Math.floor(count);
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      update();
+      counterObserver.unobserve(counter);
+    }
+  });
+});
+
+counters.forEach(counter => {
+  counterObserver.observe(counter);
+});
